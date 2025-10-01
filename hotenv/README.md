@@ -18,7 +18,7 @@ It’s designed for use in containerized environments like Kubernetes, where sec
 ## Installation
 
 ```bash
-go get github.com/kulu/go-modules/hotenv@latest
+go get github.com/kulu/go-hotenv/hotenv@latest
 ```
 ---
 
@@ -33,7 +33,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/kulu/go-modules/hotenv"
+	"github.com/kulu/go-hotenv/hotenv"
 )
 
 func main() {

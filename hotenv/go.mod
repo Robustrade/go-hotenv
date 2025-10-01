@@ -1,4 +1,4 @@
-module github.com/Robustrade/go-modules/hotenv
+module github.com/Robustrade/go-hotenv/hotenv
 
 go 1.25.0
 

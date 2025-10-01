@@ -1,6 +1,6 @@
-# go-modules
+# go-hotenv
 
-Internal repository for reusable Go modules.
+Internal repository for reusable Go hotenv.
 
 This repo hosts multiple small, independent Go packages maintained internally for shared use across projects at **Kulu**.  
 Each subfolder (e.g., `hotenv/`) is its own Go module with its own `go.mod`.
@@ -10,21 +10,20 @@ Each subfolder (e.g., `hotenv/`) is its own Go module with its own `go.mod`.
 ## Structure
 
 ```
-go-modules/
+go-hotenv/
 ├── hotenv/          # Environment auto-reload utility
-├── another-module/  # (future modules go here)
 └── README.md
 ```
 
 Each submodule can be versioned and imported independently:
 
 ```bash
-go get github.com/kulu/go-modules/<module-name>@<tag>
+go get github.com/kulu/go-hotenv/<module-name>@<tag>
 ```
 
 Example:
 ```bash
-go get github.com/kulu/go-modules/hotenv@v1.0.0
+go get github.com/kulu/go-hotenv/hotenv@v1.0.0
 ```
 
 ---
@@ -42,11 +41,11 @@ git push origin hotenv/v0.1.0
 3. Consumers can then update with:
 
 ```bash
-go get -u github.com/kulu/go-modules/hotenv@hotenv/v1.0.0
+go get -u github.com/kulu/go-hotenv/hotenv@hotenv/v1.0.0
 ```
 ---
 
-## Current modules
+## Current hotenv
 
 | Module | Description | Version |
 |---------|--------------|----------|
